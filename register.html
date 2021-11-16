@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symposium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="form_full_page">
+        <div class="form_header">
+            <div class="right_header_form">
+                <img src="yellow.png" >
+            </div>
+        </div>
+        <div class="main_form">
+            <div class="right_main_form">
+                <div class="all_form">
+                    <p style="color: #142E38;text-align: center;font-size: xx-large;font-weight: 700;">Register for Symposium</p>
+                    <form action="#" id="register_form">
+                        <div class="two">
+                            <label for="registering_name">Team Name</label>
+                            <input type="text" id="registering_team_name" required>
+                        </div>
+                        <div class="two">
+                            <label for="registering_name">Team Member 1 Name</label>
+                            <input type="text" id="registering_name1" required>
+                        </div>
+                        <div class="two">
+                            <label for="registering_name">Team Member 2 Name</label>
+                            <input type="text" id="registering_name2">
+                        </div>
+                        <div class="two">
+                            <label for="registering_name">Team Member 3 Name</label>
+                            <input type="text" id="registering_name3">
+                        </div>
+                        <div class="two">
+                            <label for="registering_name">Team Member 4 Name</label>
+                            <input type="text" id="registering_name4">
+                        </div>
+                        <div class="two">
+                            <label for="registering_email">Team Leader Email</label>
+                            <input type="email" id="registering_email" required>
+                        </div>
+                        <div class="two">
+                            <label for="registering_phone_num">Team Leader Phone Number</label>
+                            <input type="tel" id="registering_phone_num" required>
+                        </div>
+                        <a href="register2.html" class="hover1"><button class="hover1" type="submit">Click here to register</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(() => {
+            $(".hover1").click(()=>{
+                location.replace("./register2.html");
+            })
+        })
+    </script>
+</body>
+</html>
