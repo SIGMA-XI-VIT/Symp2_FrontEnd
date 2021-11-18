@@ -161,16 +161,18 @@ body {
 .right_header {
     flex-basis: 50%;
 }
-
+.aboutuscontent p{
+    text-align: justify;
+}
 .aboutus {
     background-color: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
+    height: max-content;
 }
 .aboutusmain {
-    height: 80vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,13 +219,20 @@ body {
     padding: 5px 0px;
 }
 .aboutuscontent {
-    width: 50vw;
-    height: 50vh;
+    width: 80vw;
+    height: max-content;
     background: #fff;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.aboutuscontent p:nth-child(1){
+    margin : 4vh 0;
+}
+.aboutuscontent p:nth-child(2){
+    margin-bottom: 4vh;
 }
 .speakers {
     position: relative;
@@ -241,8 +250,9 @@ body {
     text-align: center;
 }
 .main_speakers {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
 }
@@ -281,6 +291,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 40%;
+    width: 100%;
 }
 .card_main h3 {
     font-size: x-large;
@@ -291,7 +302,10 @@ body {
     font-weight: 300;
 }
 .photo {
-    width: 25vw;
+    flex-basis: 60%;
+}
+.card_main h3{
+    text-align: center;
 }
 .logo {
     width: 25%;
@@ -348,6 +362,9 @@ body {
     width: 30vw;
     display: flex;
     justify-content: space-around;
+}
+.main_connect a ion-icon:hover{
+    color: #000;
 }
 .main_connect ion-icon {
     font-size: xx-large;
@@ -532,6 +549,17 @@ body {
     top: -4vw;
     border: 3px solid #25ffae;
 }
+.card_main a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.card_main a ion-icon{
+    font-size: x-large;
+    padding-right: 5px;
+    color: #34B7F1;
+}
 #suc {
     padding-top: 4vw;
 }
@@ -575,16 +603,17 @@ body {
     }
     .aboutuscontent {
         width: 80vw;
-        height: 40vh;
+        height: max-content;
     }
     .aboutuscontent p{
         font-size: large;
+        text-align:left;
     }
     .aboutusmain {
-        height: 50vh;
+        height: max-content;
     }
     .aboutus {
-        height: 60vh;
+        height: max-content;
     }
     .card,
     .card1 {
@@ -617,8 +646,9 @@ body {
         font-size: x-large;
     }
     .main_speakers {
-        align-items: center;
+        display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     .main_contact {
         align-items: center;
@@ -801,5 +831,13 @@ body {
     }
     #upda {
         padding-bottom: 5px;
+    }
+    .threediscordemail{
+        width: 90vw;
+    }
+    .tagline{
+        text-align: center;
+        font-size: large;
+
     }
 }

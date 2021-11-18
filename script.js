@@ -18,7 +18,7 @@ $(document).ready(() => {
         }
     });
     $("#goright").click(() => {
-        if(r<=1){
+        if(r<=2){
             arr[r].style.display="none";
             r++;
             arr[r].style.display="flex";
@@ -90,12 +90,12 @@ document.querySelector(".aboutus").addEventListener('mouseleave',() =>{
 
 
 // add start
-document.querySelector(".rules").addEventListener('mouseover',() =>{
+document.querySelector("#rules").addEventListener('mouseover',() =>{
     let abc = document.getElementById('rules');
     abc.classList.add("current");
 });
 
-document.querySelector(".rules").addEventListener('mouseleave',() =>{
+document.querySelector("#rules").addEventListener('mouseleave',() =>{
     let abc = document.getElementById('rules');
     abc.classList.remove("current");
 });
