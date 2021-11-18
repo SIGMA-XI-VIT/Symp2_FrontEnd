@@ -70,7 +70,7 @@ body {
 .left_bg {
     width: 100vw;
     height: 110vh;
-    background: url("BACKGROUND.png");
+    background: url("images/BACKGROUND.png");
     background-size: 100% 100%;
     background-position: center;
     position: absolute;
@@ -84,7 +84,7 @@ body {
     position: absolute;
     top: 10vh;
     right: 0;
-    background: url("pollution.png");
+    background: url("images/pollution.png");
     background-size: 100% 100%;
     background-position: center;
     z-index: -6;

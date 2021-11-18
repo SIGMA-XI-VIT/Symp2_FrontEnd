@@ -1,4 +1,4 @@
-var arr = [document.getElementById("c1"),document.getElementById("c2"),document.getElementById("c3"), document.getElementById("c4")];
+var arr = [document.getElementById("c1"),document.getElementById("c2"),document.getElementById("c3"), document.getElementById("c4")]; //added element
 var v = [document.getElementById("d1"),document.getElementById("d2")];
 var r = 0;
 var r2 = 0;
@@ -87,6 +87,19 @@ document.querySelector(".aboutus").addEventListener('mouseleave',() =>{
     let abc = document.getElementById('aboutus_link');
     abc.classList.remove("current");
 });
+
+
+// add start
+document.querySelector(".rules").addEventListener('mouseover',() =>{
+    let abc = document.getElementById('rules');
+    abc.classList.add("current");
+});
+
+document.querySelector(".rules").addEventListener('mouseleave',() =>{
+    let abc = document.getElementById('rules');
+    abc.classList.remove("current");
+});
+// add stop
 
 document.querySelector(".sponsor").addEventListener('mouseover',() =>{
     let abc = document.getElementById('sponsor_link');
