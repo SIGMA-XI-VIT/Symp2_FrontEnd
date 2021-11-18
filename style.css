@@ -413,7 +413,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("BACKGROUND.png");
+    background: url("images/BACKGROUND.png");
     background-size: 100% 100%;
     background-position: center;
     overflow: hidden;
