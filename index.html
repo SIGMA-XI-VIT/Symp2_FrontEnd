@@ -30,6 +30,7 @@
                 <li id="home_link"><a href="#nav1">Home</a></li>
                 <li id="aboutus_link"><a href="#event">About</a></li>
                 <li id="speak"><a href="#nav3">Speakers</a></li>
+                <li id="rules"><a href="#">Ideathon Guidelines</a></li>
                 <li id="sponsor_link"><a href="#nav4">Sponsor</a></li>
                 <li id="contact_link"><a href="#nav5">Contact Us</a></li>
             </ul>
@@ -47,16 +48,20 @@
             <p class="tagline">Pollution management for sustainable environment</p>
             <div class="time_left">
                 <div class="one_time">
-                    <p id="days">30</p>
+                    <p id="days"></p>
                     <p>Days</p>
                 </div>
                 <div class="one_time">
-                    <p id="hours">23</p>
+                    <p id="hours"></p>
                     <p>Hours</p>
                 </div>
                 <div class="one_time">
-                    <p id="mins">23</p>
+                    <p id="mins"></p>
                     <p>Minutes</p>
+                </div>
+                <div class="one_time">
+                    <p id="sec"></p>
+                    <p>Seconds</p>
                 </div>
                 <script>
                     // Set the date we're counting down to
@@ -83,7 +88,7 @@
                     document.getElementById("days").innerHTML = days;
                     document.getElementById("hours").innerHTML = hours;
                     document.getElementById("mins").innerHTML = minutes;
-
+                    document.getElementById("sec").innerHTML = seconds;
                     // If the count down is finished, write some text
                     if (distance < 0) {
                         clearInterval(x);
