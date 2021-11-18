@@ -1,4 +1,4 @@
-var arr = [document.getElementById("c1"),document.getElementById("c2"),document.getElementById("c3")];
+var arr = [document.getElementById("c1"),document.getElementById("c2"),document.getElementById("c3"), document.getElementById("c4")];
 var v = [document.getElementById("d1"),document.getElementById("d2")];
 var r = 0;
 var r2 = 0;
