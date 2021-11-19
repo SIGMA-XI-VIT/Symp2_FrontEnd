@@ -457,7 +457,7 @@ body {
     background-size: 100% 100%;
     background-position: center;
     flex-direction: column;  
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .form_header {
     flex-basis: 10%;
@@ -481,7 +481,7 @@ body {
 .main_form {
     margin-top: 20vh;
     display: flex;
-    height: 85vh;
+    height: max-content;
     justify-content: center;
     align-items: center;
     
@@ -514,6 +514,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #fff;
+    margin: 5px;
 }
 .two label {
     color: #142e38;
@@ -731,6 +732,9 @@ ol ol{
     width: max-content;
     height: max-content;
     padding: 15px;
+}
+.all_form{
+    height: max-content;
 }
 
 @media (max-width: 800px) {
