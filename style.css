@@ -433,6 +433,7 @@ body {
     background: url("images/BACKGROUND.png");
     background-size: 100% 100%;
     background-position: center;
+    flex-direction: column;  
 }
 .form_header {
     flex-basis: 10%;
@@ -441,6 +442,7 @@ body {
     align-items: center;
     background-color: transparent;
 }
+
 
 .right_header_form {
     flex-basis: 100%;
@@ -599,6 +601,7 @@ body {
     font-size: x-large;
     font-weight: 500;
 }
+
 .main_main_rules{
     margin-top: 25vh;
     width: 100vw;
