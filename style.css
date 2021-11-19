@@ -430,11 +430,9 @@ body {
     height: max-content;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-=======
-    
-    /* overflow: hidden; */
->>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
+    background: url("images/BACKGROUND.png");
+    background-size: 100% 100%;
+    background-position: center;
 }
 .form_header {
     flex-basis: 10%;
@@ -442,9 +440,6 @@ body {
     display: flex;
     align-items: center;
     background-color: transparent;
-}
-.all_form {
-    /* margin-bottom: 20vh; */
 }
 
 .right_header_form {
@@ -464,11 +459,9 @@ body {
     height: max-content;
     justify-content: center;
     align-items: center;
-    background: url("images/BACKGROUND.png");
-    background-size: 100% 100%;
-    background-position: center;
 }
 .right_main_form {
+    margin: 4vh 0;
     position: relative;
     width: 100vw;
     display: flex;
@@ -476,7 +469,7 @@ body {
     align-items: center;
 }
 #register_form {
-    height: 85vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -606,7 +599,6 @@ body {
     font-size: x-large;
     font-weight: 500;
 }
-<<<<<<< HEAD
 .main_main_rules{
     margin-top: 25vh;
     width: 100vw;
@@ -617,10 +609,9 @@ body {
 }
 .main_rules{
     width: 110vw;
-=======
+}
 .rules{
     background: url('images/BACKGROUND.png');
->>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -642,7 +633,6 @@ body {
     font-weight: 600;
     text-align: center !important;
 }
-<<<<<<< HEAD
 .main_main_rules ol{
     margin-left: 1.5vw;
 }
@@ -665,10 +655,9 @@ body {
 } */
 .tagline{
     font-size: larger;
-=======
+}
 ol ol{
     list-style-type: lower-alpha !important;
->>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
 }
 .hover1div{
     display: inline-flex;
