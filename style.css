@@ -429,12 +429,8 @@ body {
     width: 100vw;
     height: max-content;
     display: flex;
-    flex-direction: column;
-<<<<<<< HEAD
-=======
-    
+    flex-direction: column;  
     /* overflow: hidden; */
->>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
 }
 .form_header {
     flex-basis: 10%;
@@ -443,9 +439,7 @@ body {
     align-items: center;
     background-color: transparent;
 }
-.all_form {
-    /* margin-bottom: 20vh; */
-}
+
 
 .right_header_form {
     flex-basis: 100%;
@@ -606,7 +600,7 @@ body {
     font-size: x-large;
     font-weight: 500;
 }
-<<<<<<< HEAD
+
 .main_main_rules{
     margin-top: 25vh;
     width: 100vw;
@@ -617,10 +611,9 @@ body {
 }
 .main_rules{
     width: 110vw;
-=======
+}
 .rules{
     background: url('images/BACKGROUND.png');
->>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -642,7 +635,6 @@ body {
     font-weight: 600;
     text-align: center !important;
 }
-<<<<<<< HEAD
 .main_main_rules ol{
     margin-left: 1.5vw;
 }
@@ -665,10 +657,9 @@ body {
 } */
 .tagline{
     font-size: larger;
-=======
+}
 ol ol{
     list-style-type: lower-alpha !important;
->>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
 }
 .hover1div{
     display: inline-flex;
