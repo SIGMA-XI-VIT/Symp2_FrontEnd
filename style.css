@@ -525,9 +525,9 @@ body {
 }
 #discord_btn {
     border: 0;
-    color: #fff;
+    color: #018c56;
     cursor: pointer;
-    background-color: #6a4bff;
+    background-color: #fff;
     padding: 15px;
     border-radius: 4px;
     width: max-content;
@@ -536,6 +536,15 @@ body {
     border: 0;
     color: #fff;
     background-color: #13c39c;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: max-content;
+}
+#submit_idea_btn {
+    border: 0;
+    color: #fff;
+    background-color: #018c56;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
@@ -876,6 +885,10 @@ ol ol{
     }
     #discord_btn,
     #email_btn {
+        width: max-content;
+        font-size: smaller;
+    }
+    #submit_idea_btn {
         width: max-content;
         font-size: smaller;
     }
