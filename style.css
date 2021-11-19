@@ -426,23 +426,23 @@ body {
 }
 
 .form_full_page {
-    width: 100vw;
+    width: max-content;
     height: max-content;
     display: flex;
     flex-direction: column;
     background: url("images/BACKGROUND.png");
     background-size: 100% 100%;
-    background-position: center;
-    flex-direction: column;  
+    background-position: center;  
+    /* overflow: hidden; */
+    
 }
 .form_header {
     flex-basis: 10%;
     z-index: 100;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     background-color: transparent;
 }
-
 
 .right_header_form {
     flex-basis: 100%;
@@ -456,14 +456,14 @@ body {
     margin-top: 3vh;
 }
 .main_form {
-    margin-top: 10vh;
+    margin-top: 20vh;
     display: flex;
     height: max-content;
     justify-content: center;
     align-items: center;
+    
 }
 .right_main_form {
-    margin: 4vh 0;
     position: relative;
     width: 100vw;
     display: flex;
@@ -471,7 +471,7 @@ body {
     align-items: center;
 }
 #register_form {
-    height: max-content;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -509,6 +509,7 @@ body {
     border: 1.25px solid #40c076;
     box-shadow: 2.41247px 4.82493px 7.2374px rgba(79, 79, 79, 0.15);
     border-radius: 2.41247px;
+    margin: 5px 0;
 }
 .all_success {
     position: relative;
@@ -837,11 +838,7 @@ ol ol{
         width: 90vw;
         font-size: x-small;
     }
-    .form_full_page{
-        background:transparent;
-        height: max-content;
-        /* overflow: hidden; */
-    }
+    
     .all_success,
     .all_form {
         margin: 0;
