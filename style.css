@@ -571,6 +571,9 @@ body {
     align-items: center;
     color: #142e38;
 }
+.rules ul{
+    margin-left: 5%;
+}
 .thankyou p{
     font-size: xx-large;
     font-weight: 700;
@@ -593,10 +596,13 @@ body {
     font-weight: 500;
 }
 .rules{
-    background: url('images/BACKGROUND.png');
+    background: linear-gradient(100.89deg,#13ba74 -8.01%,rgba(12, 85, 54, 0.85) 125.72%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #142e38  ;
+    position: relative;
+    top: 10vh;
 }
 .main_rules , .who_can , .howto_apply , .what_to_do ,.cash_prize{
     width: 80vw;
@@ -607,18 +613,45 @@ body {
 }
 .rules ol{
     list-style-type:decimal;
-    margin-left: 5vw;
+}
+.rules ol li{
+    font-weight: 600;
 }
 .heading_rules{
-    width: 100%;
-    font-size: x-large;
-    font-weight: 600;
+    width: max-content;
+    font-size: xx-large;
+    font-weight:800;
     text-align: center !important;
+    color: #fff;
+    position: relative;
+    margin: auto;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+.heading_rules::after{
+    width:80%;
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #60d787;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    border-radius: 15px;
+}
+#regiter_ideathon{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6a4bff;
+    color: #fff;
+    margin: 4vh 0;
 }
 ol ol{
     list-style-type: lower-alpha !important;
 }
-
 @media (max-width: 800px) {
     #c2,
     #c3,

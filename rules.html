@@ -7,24 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rules</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="header">
+        <div class="left_header">
+            <img src="images/Xientia_logo.png">
+        </div>
+        <div class="right_header">
+            <ion-icon name="menu-outline" id="menu"></ion-icon>
+            <ul id="links">
+                <ion-icon name="close" id="closes"></ion-icon>
+                <li id="home_link"><a href="#nav1">Home</a></li>
+                <li id="aboutus_link"><a href="#event">About</a></li>
+                <li id="speak"><a href="#nav3">Speakers</a></li>
+                <!--added link start, need fixing-->
+                <li id="rules"><a href="rules.html">Ideathon</a></li>
+                <!--added link stop-->
+                <li id="sponsor_link"><a href="#nav4">Sponsor</a></li>
+                <li id="contact_link"><a href="#nav5">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="rules">
         <div class="main_rules">
             <p class="heading_rules">Guidelines: </p>
             <ol>
                 <li>Your innovation should focus towards providing novel solutions to any ONE of the key SDG areas floated for the competition.</li>
                 <li>Your ideas should be original and innovative. Plagiarism of any sort shall not be tolerated.</li>
-                <li>The Internet can be used as a source of material and information regarding the topic in question.</li>
-                <li>A certificate of participation will be given to all those participants who submit their ideas within the timeline frame.</li>
+                <li>A certificate of participation will be given to all those participants who submit their ideas within the timeline.</li>
                 <li>Projects will be shortlisted from all submissions and evaluated by external speakers of Xientia 
                     based on a selection criterion.</li>
                 <li>The top three will be selected as the winners, with the following prize distribution:
-                    <ol>
+                    <ol style="margin-left: 5%;">
                         <li>First Prize: <span> Rs. 5000</span></li>
                         <li>Second Prize: <span> Rs. 3000</span></li>
-                        <li>Third Prize: <span> Rs. 5000</span></li>
+                        <li>Third Prize: <span> Rs. 2000</span></li>
                     </ol>
                 </li>
                 <li>The decision of the judges shall be final and binding.</li>
@@ -50,25 +77,27 @@
         </div>
         <div class="what_to_do">
             <p class="heading_rules">What to do?</p>
-            <li>Develop a sustainability model using relevant technologies of your choice and bring forth 
-                new and inventive ideas for any 1 of the following 17 sustainable development goals set 
-                by the United Nations.</li>
-            <li>Make a presentation report that explains answers to the following (but not limited to):</li>
-            <li> The presentation report must include the SDG theme chosen, idea submission name, 
-                team name and names of team members.</li>
-            <li>The presentation report must not exceed 20 slides.</li>
-            <li>The presentation report can include surveys, statistics, literature reviews, graphs etc.</li>
-            <li>The evaluation will be done on the following criteria:
-                <ul>
-                    <li>Originality of thought and content</li>
-                    <li>Depth of Research</li>
-                    <li>Creativity</li>
-                    <li>Logical presentation</li>
-                    <li>Clarity of thought and idea</li>
-                    <li>Presentation novelty</li>
-                </ul>
-            </li>
-            <li>The winners will be declared on 27/10/2021 during Xientia’s first installment.</li>
+            <ol>
+                <li>Develop a sustainability model using relevant technologies of your choice and bring forth 
+                    new and inventive ideas for any 1 of the following 17 sustainable development goals set 
+                    by the United Nations.</li>
+                <li>Make a presentation report that explains answers to the following (but not limited to):</li>
+                <li> The presentation report must include the SDG theme chosen, idea submission name, 
+                    team name and names of team members.</li>
+                <li>The presentation report must not exceed 20 slides.</li>
+                <li>The presentation report can include surveys, statistics, literature reviews, graphs etc.</li>
+                <li>The evaluation will be done on the following criteria:
+                    <ul type="disc">
+                        <li>Originality of thought and content</li>
+                        <li>Depth of Research</li>
+                        <li>Creativity</li>
+                        <li>Logical presentation</li>
+                        <li>Clarity of thought and idea</li>
+                        <li>Presentation novelty</li>
+                    </ul>
+                </li>
+                <li>The winners will be declared on 27/10/2021 during Xientia’s first installment.</li>
+            </ol>
         </div>
         <div class="cash_prize">
             <p class="heading_rules">Cash prize:</p>
@@ -78,6 +107,7 @@
                 <li>Third prize: Rs. 2000</li>
             </ol>
         </div>
+        <button id="regiter_ideathon">Submit Your Idea</button>
     </div>
 </body>
 
