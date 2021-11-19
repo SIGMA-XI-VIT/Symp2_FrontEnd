@@ -453,9 +453,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("images/BACKGROUND.png");
-    background-size: 100% 100%;
-    background-position: center;
 }
 .form_header {
     flex-basis: 10%;
@@ -485,6 +482,9 @@ body {
     height: 85vh;
     justify-content: center;
     align-items: center;
+    background: url("images/BACKGROUND.png");
+    background-size: 100% 100%;
+    background-position: center;
 }
 .right_main_form {
     position: relative;
