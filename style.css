@@ -56,7 +56,7 @@
 }
 body {
     background-color: #fff;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .shade {
     background: rgba(0, 175, 102, 0.5);
@@ -456,7 +456,6 @@ body {
     background: url("images/BACKGROUND.png");
     background-size: 100% 100%;
     background-position: center;
-    overflow: hidden;
 }
 .form_header {
     flex-basis: 10%;
@@ -626,14 +625,14 @@ body {
 }
 .main_main_rules{
     margin-top: 25vh;
-    width: 28vw;
+    width: 100vw;
     margin-bottom: 15vh;
 }
 #guildrules{
     margin-bottom: 4vh;
 }
 .main_rules{
-    width: 45vw;
+    width: 110vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -661,7 +660,7 @@ body {
     background: linear-gradient(100.89deg, #13BA74 -8.01%, rgba(12, 85, 54, 0.85) 125.72%);
 }
 .rules1{
-    width: 100vw;
+    width: 110vw;
     display: flex;
     justify-content: center;
     align-items: center;

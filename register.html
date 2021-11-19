@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +18,19 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <div class="form_full_page">
         <div class="form_header">
             <div class="right_header_form">
-                <img src="images/Yellow.png" >
+                <img src="images/Yellow.png">
             </div>
         </div>
         <div class="main_form">
             <div class="right_main_form">
                 <div class="all_form">
-                    <p style="color: #142E38;text-align: center;font-size: xx-large;font-weight: 700;">Register for Ideathon</p>
+                    <p style="color: #142E38;text-align: center;font-size: xx-large;font-weight: 700;">Register for
+                        Ideathon</p>
                     <form action="#" id="register_form" name="google-sheet">
                         <div class="two">
                             <label for="registering_name">Team Name</label>
@@ -61,7 +64,8 @@
                             <label for="link_to_ppt">Link to PPT (uploaded on Google Drive)</label>
                             <input name="submission_link" type="text" id="link_to_ppt" required>
                         </div>
-                        <a href="register2.html" class="hover1"><button class="hover1" type="submit">Click here to register</button></a>
+                        <a href="register2.html" class="hover1"><button class="hover1" type="submit">Click here to
+                                register</button></a>
                     </form>
                 </div>
             </div>
@@ -79,19 +83,20 @@
     </script>-->
     <!-- Trial google sheet thing Starts-->
     <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxqGdPdjPmOMzJdUNGzGgtguj0WNjhNf6dwOeklNXwAHfv_ggmZ_2_H1KOth4MOyD-Q/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxqGdPdjPmOMzJdUNGzGgtguj0WNjhNf6dwOeklNXwAHfv_ggmZ_2_H1KOth4MOyD-Q/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => location.replace("./register2.html"))
                 .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+        })
+    </script>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Trial google sheet thing Ends-->
 </body>
+
 </html>
