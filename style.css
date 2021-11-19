@@ -472,7 +472,7 @@ body {
     align-items: center;
 }
 #register_form {
-    height: 85vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -626,6 +626,15 @@ body {
 }
 ol ol{
     list-style-type: lower-alpha !important;
+}
+.hover1div{
+    display: inline-flex;
+    margin: 0px 15px;
+}
+.hover1{
+    width: max-content;
+    height: max-content;
+    padding: 15px;
 }
 
 @media (max-width: 800px) {
@@ -796,7 +805,7 @@ ol ol{
     .form_full_page{
         background:transparent;
         height: max-content;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .all_success,
     .all_form {
