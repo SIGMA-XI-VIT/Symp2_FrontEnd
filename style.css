@@ -89,18 +89,7 @@ body {
     background-position: center;
     z-index: -6;
 }
-.right_bg2 {
-    width: 70vw;
-    height: 90vh;
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    background: url("images/pollution.png");
-    background-size: 100% 100%;
-    background-position: center;
-    z-index: -6;
-}
-.main{
+.main {
     background-color: transparent;
     height: 100vh;
     position: relative;
@@ -118,10 +107,9 @@ body {
     height: 50vh;
 }
 .heading_topic {
-    font-size: 4rem;
+    font-size: xx-large;
     font-weight: 800;
     text-align: center;
-    text-transform: uppercase;
 }
 .time_left {
     display: flex;
@@ -192,7 +180,6 @@ body {
 .aboutus h1,
 .speakers h1,
 .sponsor h1,
-#guild,
 .contact h1 {
     position: relative;
     margin: auto;
@@ -200,7 +187,6 @@ body {
     font-weight: 800;
     width: max-content;
 }
-#guild::after,
 .aboutus h1::after,
 .sponsor h1::after,
 .contact h1::after {
@@ -258,19 +244,10 @@ body {
         rgba(12, 85, 54, 0.85) 125.72%
     );
 }
-#guild{
-    margin-top: 4vh;
-}
-.speakers h1{
+.speakers h1 {
     margin-top: 5vh;
     color: #fff;
     text-align: center;
-}
-.ideathon h1{
-    font-size: 3.5rem;
-    text-align: center;
-    font-weight: 800;
-    color: #fff;
 }
 .main_speakers {
     display: grid;
@@ -450,9 +427,14 @@ body {
 
 .form_full_page {
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    
+    /* overflow: hidden; */
+>>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
 }
 .form_header {
     flex-basis: 10%;
@@ -462,7 +444,7 @@ body {
     background-color: transparent;
 }
 .all_form {
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
 }
 
 .right_header_form {
@@ -479,7 +461,7 @@ body {
 .main_form {
     margin-top: 10vh;
     display: flex;
-    height: 85vh;
+    height: max-content;
     justify-content: center;
     align-items: center;
     background: url("images/BACKGROUND.png");
@@ -514,6 +496,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #fff;
+    padding: 5px;
 }
 .two label {
     color: #142e38;
@@ -623,6 +606,7 @@ body {
     font-size: x-large;
     font-weight: 500;
 }
+<<<<<<< HEAD
 .main_main_rules{
     margin-top: 25vh;
     width: 100vw;
@@ -633,24 +617,32 @@ body {
 }
 .main_rules{
     width: 110vw;
+=======
+.rules{
+    background: url('images/BACKGROUND.png');
+>>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    overflow: hidden;
 }
-.main_rules p,.main_rules p *,ol li{
-    font-family: 'Montserrat Alternates', sans-serif;
+.main_rules , .who_can , .howto_apply , .what_to_do ,.cash_prize{
+    width: 80vw;
+    margin: 4vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.main_rules p span,li span{
-    font-weight: 600;
+.rules ol{
+    list-style-type:decimal;
+    margin-left: 5vw;
 }
-.main_main_rules p{
-    margin-bottom: 2vh;
-}
-.main_rules p span:nth-child(1){
+.heading_rules{
+    width: 100%;
     font-size: x-large;
+    font-weight: 600;
+    text-align: center !important;
 }
+<<<<<<< HEAD
 .main_main_rules ol{
     margin-left: 1.5vw;
 }
@@ -673,32 +665,21 @@ body {
 } */
 .tagline{
     font-size: larger;
+=======
+ol ol{
+    list-style-type: lower-alpha !important;
+>>>>>>> 4361ab54539b335325a8793a19c2c0aee8ad086c
 }
-.greencircle1{
-    background-color: #40C076;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position: absolute;
+.hover1div{
+    display: inline-flex;
+    margin: 0px15px;
 }
-.greencircle2{
-    background-color: #60D787;
-    width: 12vw;
-    height: 12vw;
-    border-radius: 50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.hover1{
+    width: max-content;
+    height: max-content;
+    padding: 15px;
 }
-.greencircle3{
-    background-color:#70E390;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-}
+
 @media (max-width: 800px) {
     #c2,
     #c3,
@@ -867,7 +848,7 @@ body {
     .form_full_page{
         background:transparent;
         height: max-content;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .all_success,
     .all_form {
@@ -902,7 +883,7 @@ body {
     .all_form {
         height: max-content;
         width: max-content;
-        background-color: transparent;
+        background-color: rgba(156, 233, 48, 0.442);
     }
     #register_form button {
         padding: 10px;
