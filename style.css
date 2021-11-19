@@ -89,7 +89,18 @@ body {
     background-position: center;
     z-index: -6;
 }
-.main {
+.right_bg2 {
+    width: 70vw;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background: url("images/pollution.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: -6;
+}
+.main{
     background-color: transparent;
     height: 100vh;
     position: relative;
@@ -107,9 +118,10 @@ body {
     height: 50vh;
 }
 .heading_topic {
-    font-size: xx-large;
+    font-size: 4rem;
     font-weight: 800;
     text-align: center;
+    text-transform: uppercase;
 }
 .time_left {
     display: flex;
@@ -180,6 +192,7 @@ body {
 .aboutus h1,
 .speakers h1,
 .sponsor h1,
+#guild,
 .contact h1 {
     position: relative;
     margin: auto;
@@ -187,6 +200,7 @@ body {
     font-weight: 800;
     width: max-content;
 }
+#guild::after,
 .aboutus h1::after,
 .sponsor h1::after,
 .contact h1::after {
@@ -244,10 +258,19 @@ body {
         rgba(12, 85, 54, 0.85) 125.72%
     );
 }
-.speakers h1 {
+#guild{
+    margin-top: 4vh;
+}
+.speakers h1{
     margin-top: 5vh;
     color: #fff;
     text-align: center;
+}
+.ideathon h1{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
 }
 .main_speakers {
     display: grid;
@@ -432,9 +455,9 @@ body {
     flex-direction: column;
     background: url("images/BACKGROUND.png");
     background-size: 100% 100%;
-    background-position: center;  
-    /* overflow: hidden; */
-    
+    background-position: center;
+    flex-direction: column;  
+    overflow: hidden;
 }
 .form_header {
     flex-basis: 10%;
@@ -458,7 +481,7 @@ body {
 .main_form {
     margin-top: 20vh;
     display: flex;
-    height: max-content;
+    height: 85vh;
     justify-content: center;
     align-items: center;
     
@@ -491,7 +514,6 @@ body {
     display: flex;
     flex-direction: column;
     color: #fff;
-    padding: 5px;
 }
 .two label {
     color: #142e38;
@@ -616,26 +638,24 @@ body {
 }
 .rules{
     background: url('images/BACKGROUND.png');
+    width: 45vw;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
-.main_rules , .who_can , .howto_apply , .what_to_do ,.cash_prize{
-    width: 80vw;
-    margin: 4vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.main_rules p,.main_rules p *,ol li{
+    font-family: 'Montserrat Alternates', sans-serif;
 }
-.rules ol{
-    list-style-type:decimal;
-    margin-left: 5vw;
-}
-.heading_rules{
-    width: 100%;
-    font-size: x-large;
+.main_rules p span,li span{
     font-weight: 600;
-    text-align: center !important;
+}
+.main_main_rules p{
+    margin-bottom: 2vh;
+}
+.main_rules p span:nth-child(1){
+    font-size: x-large;
 }
 .main_main_rules ol{
     margin-left: 1.5vw;
@@ -663,9 +683,49 @@ body {
 ol ol{
     list-style-type: lower-alpha !important;
 }
+.rules1{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+/* #guildrules{
+    position: relative;
+    z-index: 1;
+    background: #fff;
+} */
+.tagline{
+    font-size: larger;
+}
+.greencircle1{
+    background-color: #40C076;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+}
+.greencircle2{
+    background-color: #60D787;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.greencircle3{
+    background-color:#70E390;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
 .hover1div{
     display: inline-flex;
-    margin: 0px15px;
+    margin: 0px 15px;
 }
 .hover1{
     width: max-content;
@@ -872,7 +932,7 @@ ol ol{
     .all_form {
         height: max-content;
         width: max-content;
-        background-color: rgba(156, 233, 48, 0.442);
+        background-color: transparent;
     }
     #register_form button {
         padding: 10px;
