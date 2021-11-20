@@ -25,22 +25,26 @@
             <div class="right_header_form">
                 <img src="images/Yellow.png">
             </div>
+            <div class="left_header_btn">
+                <button id="gobackbtn">Go Back</button>
+            </div>
         </div>
         <p style="color: #142E38;text-align: center;font-size: xx-large;font-weight: 700;">Register for Ideathon</p>
         <div class="main_form">
             <div class="right_main_form">
                 <div class="all_form">
                     <form action="#" id="register_form" name="google-sheet">
-                        <div class="two">
-                            <label for="registering_name">Team Name</label>
+                        <div class="two" style="position: relative;left: 25vw;">
+                            <label for="registering_name">Team Name<span class="red">*</span></label>
                             <input name="Team_Name" type="text" id="registering_team_name" required>
                         </div>
+                        <div></div>
                         <div class="two">
-                            <label for="registering_name">Team Member 1 Name</label>
+                            <label for="registering_name">Team Member 1 Name<span class="red">*</span></label>
                             <input name="Name_1" type="text" id="registering_name1" required>
                         </div>
                         <div class="two">
-                            <label for="registering_no">Team Member 1 Reg No.</label>
+                            <label for="registering_no">Team Member 1 Reg No.<span class="red">*</span></label>
                             <input name="regno_1" type="text" id="registering_no1" required>
                         </div>
                         <div class="two">
@@ -68,13 +72,14 @@
                             <input name="regno_4" type="text" id="registering_no4">
                         </div>
                         <div class="two">
-                            <label for="registering_email">Team Leader Email</label>
+                            <label for="registering_email">Team Leader Email<span class="red">*</span></label>
                             <input name="email" type="email" id="registering_email" required>
                         </div>
                         <div class="two">
-                            <label for="registering_phone_num">Team Leader Phone Number</label>
+                            <label for="registering_phone_num">Team Leader Phone Number <span class="red">*</span></label>
                             <input name="phone" type="tel" id="registering_phone_num" required>
                         </div>
+                        <div></div>
                         <div class="hover1div">
                             <a href="rules.html" class="hover1"><button class="hover1" type="button">Guidlines</button></a>
                             <a href="register2.html" class="hover1"><button class="hover1" type="submit">Click here to register</button></a>
@@ -104,6 +109,9 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => location.replace("./register2.html"))
                 .catch(error => console.error('Error!', error.message))
+        });
+        $("#gobackbtn").click(() => {
+            history.back();
         })
     </script>
 

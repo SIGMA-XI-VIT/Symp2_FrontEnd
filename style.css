@@ -462,29 +462,49 @@ body {
 .form_header {
     flex-basis: 10%;
     z-index: 100;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
 }
-
-.right_header_form {
-    flex-basis: 100%;
+.left_header_btn{
+    flex-basis: 50%;
     display: flex;
     justify-content: flex-end;
+    margin-right: 5vw;
+}
+.left_header_btn button{
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #142e38;
+    color: #fff;
+    cursor: pointer;
+}
+.left_header_btn button:hover{
+    background-color: #00af66;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.right_header_form {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 4vw;
 }
 .right_header_form img {
     height: 10vh;
-    margin-right: 5vw;
+    /* margin-right: 5vw; */
     margin-top: 3vh;
 }
 .main_form {
-    margin-top: 20vh;
+    margin-top: 4vh;
     display: flex;
     height: max-content;
     justify-content: center;
     align-items: center;
-    
 }
 .right_main_form {
     position: relative;
@@ -492,12 +512,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: max-content;
 }
 #register_form {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 90vw;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .right_main_form button {
     border: 0;
@@ -725,8 +746,14 @@ ol ol{
     border-radius: 50%;
 }
 .hover1div{
-    display: inline-flex;
-    margin: 0px 15px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    right : 20vw;
+}
+.red{
+    font-size: large;
+    color: red;
 }
 .hover1{
     width: max-content;
