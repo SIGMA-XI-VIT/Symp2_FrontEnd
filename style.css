@@ -266,12 +266,6 @@ body {
     color: #fff;
     text-align: center;
 }
-.ideathon h1{
-    font-size: 3.5rem;
-    text-align: center;
-    font-weight: 800;
-    color: #fff;
-}
 .main_speakers {
     display: grid;
     grid-template-columns: auto auto;
@@ -649,14 +643,19 @@ body {
 
 .main_main_rules{
     margin-top: 25vh;
-    width: 100vw;
+    width: 60vw;
     margin-bottom: 15vh;
 }
 #guildrules{
     margin-bottom: 4vh;
 }
 .main_rules{
-    width: 110vw;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 .rules{
     background: url('images/BACKGROUND.png');
@@ -681,18 +680,6 @@ body {
 }
 .main_main_rules ol{
     margin-left: 1.5vw;
-}
-.ideathon{
-    height: 80vh;
-    width: 100vw;
-    background: linear-gradient(100.89deg, #13BA74 -8.01%, rgba(12, 85, 54, 0.85) 125.72%);
-}
-.rules1{
-    width: 110vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vh;
 }
 /* #guildrules{
     position: relative;
