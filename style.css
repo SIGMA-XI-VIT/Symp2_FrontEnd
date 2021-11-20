@@ -628,17 +628,18 @@ body {
   font-weight: 700;
 }
 .thankyou button {
-  border: 0;
+  border: 2px solid #142e38;;
   cursor: pointer;
   border-radius: 15px;
-  color: #70e390;
-  background-color: #142e38;
+  color: #018c56;
+  background-color: #fff;
   padding: 20px 4vw;
   font-weight: 600;
   font-size: large;
 }
 .thankyou button:hover {
   color: #fff;
+  background-color: #60D787;
 }
 .aboutuscontent p {
   font-size: x-large;
