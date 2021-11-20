@@ -191,6 +191,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 .aboutus h1,
 .speakers h1,
