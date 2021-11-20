@@ -997,6 +997,16 @@ ol ol{
     .tagline{
         text-align: center;
         font-size: large;
-
+    }
+    #register_form{
+        display: flex;
+        flex-direction: column;
+    }
+    #register_form div{
+        /* left: 0; */
+        position: static !important;
+    }
+    .form_full_page{
+        background: #fff;
     }
 }

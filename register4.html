@@ -81,6 +81,37 @@
             transform: scale(1.1);
             transition: .3s;
         }
+        @media(max-width:800px){
+            body{
+                height: 75vh;
+                overflow: hidden;
+            }
+            .right_bg2 {
+                height: 65vh;
+                width: 80vw;
+                top: 6.5vh;
+            }
+
+            .left_bg {
+                height: 65vh;
+                width: 110vw;
+                top: 6.5vh;
+            }
+            .shade{
+                position: absolute;
+                top: 6.5vh;
+                height: 65vh;
+            }
+            .main_main{
+                width: 80vw;
+            }
+            .op label{
+                font-size: unset;
+            }
+            .left_header,.right_header{
+                flex-basis: 50%;
+            }
+        }
     </style>
 </head>
 

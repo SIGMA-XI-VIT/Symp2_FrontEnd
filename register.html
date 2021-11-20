@@ -17,6 +17,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <style>
+        @media(max-width:800px) {
+            .right_header_form,
+            .left_header_btn{
+                display: flex !important;
+                flex-basis: 50% !important;
+            }
+            .hover1div{
+                right: 40vw;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -76,13 +88,16 @@
                             <input name="email" type="email" id="registering_email" required>
                         </div>
                         <div class="two">
-                            <label for="registering_phone_num">Team Leader Phone Number <span class="red">*</span></label>
+                            <label for="registering_phone_num">Team Leader Phone Number <span
+                                    class="red">*</span></label>
                             <input name="phone" type="tel" id="registering_phone_num" required>
                         </div>
                         <div></div>
                         <div class="hover1div">
-                            <a href="rules.html" class="hover1"><button class="hover1" type="button">Guidlines</button></a>
-                            <a href="register2.html" class="hover1"><button class="hover1" type="submit">Click here to register</button></a>
+                            <a href="rules.html" class="hover1"><button class="hover1"
+                                    type="button">Guidlines</button></a>
+                            <a href="register2.html" class="hover1"><button class="hover1" type="submit">Click here to
+                                    register</button></a>
                         </div>
                     </form>
                 </div>
