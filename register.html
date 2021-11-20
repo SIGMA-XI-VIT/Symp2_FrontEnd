@@ -19,12 +19,14 @@
         rel="stylesheet">
     <style>
         @media(max-width:800px) {
+
             .right_header_form,
-            .left_header_btn{
+            .left_header_btn {
                 display: flex !important;
                 flex-basis: 50% !important;
             }
-            .hover1div{
+
+            .hover1div {
                 right: 40vw;
             }
         }
@@ -32,6 +34,10 @@
 </head>
 
 <body>
+    <div class="pop_up">
+        <span id="dontshowerror">X</span>
+        <p>Team name not available</p>
+    </div>
     <div class="form_full_page">
         <div class="form_header">
             <div class="right_header_form">
@@ -94,8 +100,10 @@
                         </div>
                         <div></div>
                         <div class="hover1div">
-                            <a href="rules.html" class="hover1"><button class="hover1" type="button">Guidlines</button></a>
-                            <a href="register2.html" class="hover1"><button class="hover1" type="submit">Register</button></a>
+                            <a href="rules.html" class="hover1"><button class="hover1"
+                                    type="button">Guidlines</button></a>
+                            <a href="register2.html" class="hover1"><button class="hover1"
+                                    type="submit">Register</button></a>
                         </div>
                     </form>
                 </div>
@@ -116,18 +124,28 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzkB18Bj4mpFwM99FY0mTPCvxnaHp78kKtF-TSTq-__qSwRPJ37UBk7potkyYintAhbRQ/exec'
         const form = document.forms['google-sheet']
-
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => location.replace("./register2.html"))
-                .catch(error => console.error('Error!', error.message))
+                .then(response => response.json())
+                .then((data) => {
+                    console.log(data);
+                    if (data == -1) {
+                        document.querySelector(".pop_up").style.display = "flex";
+                        document.querySelector("#dontshowerror").addEventListener('click', () => {
+                            document.querySelector(".pop_up").style.display = "none";
+                        });
+                    }
+                    else if (data == 1) {
+                        location.replace("./register2.html");
+                    }
+                })
+                .catch(error => console.log("Error"))
         });
         $("#gobackbtn").click(() => {
             history.back();
         })
     </script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Trial google sheet thing Ends-->
