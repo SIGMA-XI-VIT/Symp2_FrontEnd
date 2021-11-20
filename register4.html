@@ -100,18 +100,19 @@
         <div class="main_main">
             <p class="heading_topic">Xientia</p>
             <div class="formdiv" style="margin-top: 4vh;">
-                <form action="">
+                <form action="" id="google-sheet" name="google-sheet">
+                    <input type="hidden" name="func" id="func" value="submission">
                     <div class="op">
                         <label for="team_name">Team Name: </label>
-                        <input type="text" required>
+                        <input type="text" name="team_name" id="team_name" required>
                     </div>
                     <div class="op">
                         <label for="team_leader_email">Team Leader Email: </label>
-                        <input type="email" name="" id="team_leader_email" required>
+                        <input type="email" name="email" id="team_leader_email" required>
                     </div>
                     <div class="op" style="margin-bottom: 4vh;">
                         <label for="ppt_link">PPT Link: </label>
-                        <input type="url" required>
+                        <input type="url" name="ppt_link" required>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
@@ -122,6 +123,16 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyf7Fbna7eZA3hSmXcuqofIOxKUDrESlWXQD-VASbOeOgxaiWK3CkCMZHiJSjRe_P_cgA/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            document.getElementById("google-sheet").reset();
+        });
         $(document).ready(() => {
             $("#gobackbtn").click(() => history.back());
         });
