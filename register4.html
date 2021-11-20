@@ -1,192 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Symposium</title>
-    <link rel="icon" type="image/x-icon" href="images/Favicon_Xientia.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Favicon_Xientia.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body{
-            height: 100vh;
-            overflow: hidden;
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .main_main form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .op {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .op label {
+        color: #142e38;
+        font-size: large;
+        font-weight: 600;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      .op {
+        width: 100%;
+      }
+
+      .op input {
+        height: 5vh;
+        border: 1.25px solid #40c076;
+        box-shadow: 2.41247px 4.82493px 7.2374px rgba(79, 79, 79, 0.15);
+        border-radius: 15px;
+        margin: 5px 0;
+        width: 100%;
+      }
+
+      .main_main {
+        width: 40vw;
+      }
+
+      .formdiv {
+        width: 100%;
+      }
+
+      .right_header {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5vw;
+      }
+
+      .right_header button {
+        border: 0;
+        outline: 0;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #142e38;
+        color: #fff;
+        cursor: pointer;
+      }
+      #showerrormessage {
+        color: #142e38;
+        font-size: x-large;
+        font-weight: 600;
+        margin-top: 2vh;
+      }
+      .right_header button:hover {
+        background-color: #00af66;
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+      @media (max-width: 800px) {
+        body {
+          height: 75vh;
+          overflow: hidden;
         }
-        .main_main form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .right_bg2 {
+          height: 65vh;
+          width: 80vw;
+          top: 6.5vh;
         }
 
-        .op {
-            display: flex;
-            flex-direction: column;
+        .left_bg {
+          height: 65vh;
+          width: 110vw;
+          top: 6.5vh;
         }
-
-        .op label {
-            color: #142e38;
-            font-size: large;
-            font-weight: 600;
+        .shade {
+          position: absolute;
+          top: 6.5vh;
+          height: 65vh;
         }
-
-        form {
-            width: 100%;
-        }
-
-        .op {
-            width: 100%;
-        }
-
-        .op input {
-            height: 5vh;
-            border: 1.25px solid #40c076;
-            box-shadow: 2.41247px 4.82493px 7.2374px rgba(79, 79, 79, 0.15);
-            border-radius: 15px;
-            margin: 5px 0;
-            width: 100%;
-        }
-
         .main_main {
-            width: 40vw;
+          width: 80vw;
         }
-
-        .formdiv {
-            width: 100%;
+        .op label {
+          font-size: unset;
         }
-
+        .left_header,
         .right_header {
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 5vw;
+          flex-basis: 50%;
         }
-
-        .right_header button {
-            border: 0;
-            outline: 0;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #142e38;
-            color: #fff;
-            cursor: pointer;
-        }
-        #showerrormessage{
-            color: #142e38;
-            font-size: x-large;
-            font-weight: 600;
-            margin-top: 2vh;
-        }
-        .right_header button:hover {
-            background-color: #00af66;
-            transform: scale(1.1);
-            transition: .3s;
-        }
-        @media(max-width:800px){
-            body{
-                height: 75vh;
-                overflow: hidden;
-            }
-            .right_bg2 {
-                height: 65vh;
-                width: 80vw;
-                top: 6.5vh;
-            }
-
-            .left_bg {
-                height: 65vh;
-                width: 110vw;
-                top: 6.5vh;
-            }
-            .shade{
-                position: absolute;
-                top: 6.5vh;
-                height: 65vh;
-            }
-            .main_main{
-                width: 80vw;
-            }
-            .op label{
-                font-size: unset;
-            }
-            .left_header,.right_header{
-                flex-basis: 50%;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <div class="left_header">
-            <img src="images/Xientia_logo.png">
-        </div>
-        <div class="right_header">
-            <button id="gobackbtn">Go Back</button>
-        </div>
+      <div class="left_header">
+        <img src="images/Xientia_logo.png" />
+      </div>
+      <div class="right_header">
+        <button id="gobackbtn">Go Back</button>
+      </div>
     </div>
     <div class="left_bg"></div>
     <div class="right_bg2"></div>
     <div class="shade"></div>
     <div class="main" id="nav1">
-        <div class="main_main">
-            <p class="heading_topic">Xientia</p>
-            <div class="formdiv" style="margin-top: 4vh;">
-                <form action="" id="google-sheet" name="google-sheet">
-                    <input type="hidden" name="func" id="func" value="submission">
-                    <div class="op">
-                        <label for="team_name">Team Name: </label>
-                        <input type="text" name="team_name" id="team_name" required>
-                    </div>
-                    <div class="op">
-                        <label for="team_leader_email">Team Leader Email: </label>
-                        <input type="email" name="email" id="team_leader_email" required>
-                    </div>
-                    <div class="op" style="margin-bottom: 4vh;">
-                        <label for="ppt_link">PPT Link: </label>
-                        <input type="url" name="ppt_link" required>
-                    </div>
-                    <button type="submit">Submit</button>
-                    <p id="showerrormessage"></p>
-                </form>
+      <div class="main_main">
+        <p class="heading_topic">Xientia</p>
+        <div class="formdiv" style="margin-top: 4vh">
+          <form action="" id="google-sheet" name="google-sheet">
+            <input type="hidden" name="func" id="func" value="submission" />
+            <div class="op">
+              <label for="team_name">Team Name: </label>
+              <input type="text" name="team_name" id="team_name" required />
             </div>
+            <div class="op">
+              <label for="team_name">Number of members </label>
+              <input type="text" name="team_name" id="team_name" required />
+            </div>
+            <div class="op">
+              <label for="team_leader_email">Team Leader Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="team_leader_email"
+                required
+              />
+            </div>
+            <div class="op" style="margin-bottom: 4vh">
+              <label for="ppt_link">PPT Link: </label>
+              <input type="url" name="ppt_link" required />
+            </div>
+            <button type="submit">Submit</button>
+            <p id="showerrormessage"></p>
+          </form>
         </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzvmW9x0XBnd8u50Iod1ZqryMlo7yMxlBWAz4nBAEK0Y7uJlewPGNMrGbhCJu55rI-pQ/exec'
-        const form = document.forms['google-sheet']
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzzvmW9x0XBnd8u50Iod1ZqryMlo7yMxlBWAz4nBAEK0Y7uJlewPGNMrGbhCJu55rI-pQ/exec";
+      const form = document.forms["google-sheet"];
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => response.json())
-                .then((data) => {
-                    console.log(data);
-                    if(data==-1){
-                        $("#showerrormessage").html("Team not yet registered");
-                    }
-                    else if(data==1){
-                        $("#showerrormessage").html("Your Idea has been submitted.");
-                    }
-                })
-                .catch(error => window.alert("Error"))
-            document.getElementById("google-sheet").reset();
-        });
-        $(document).ready(() => {
-            $("#gobackbtn").click(() => history.back());
-        });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            if (data == -1) {
+              $("#showerrormessage").html("Team not yet registered");
+            } else if (data == 1) {
+              $("#showerrormessage").html("Your Idea has been submitted.");
+            }
+          })
+          .catch((error) => window.alert("Error"));
+        document.getElementById("google-sheet").reset();
+      });
+      $(document).ready(() => {
+        $("#gobackbtn").click(() => history.back());
+      });
     </script>
-</body>
-
+  </body>
 </html>
