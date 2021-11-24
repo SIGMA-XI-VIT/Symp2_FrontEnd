@@ -650,6 +650,7 @@ body {
   margin-top: 25vh;
   width: 60vw;
   margin-bottom: 15vh;
+  font-size: large
 }
 #guildrules {
   margin-bottom: 4vh;
@@ -674,7 +675,7 @@ body {
 .main_rules p,
 .main_rules p *,
 ol li {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .main_rules p span,
 li span {
