@@ -162,15 +162,14 @@
                 type="email"
                 name="email"
                 id="team_leader_email"
-                required
-              />
+                required>
             </div>
             <div class="op" style="margin-bottom: 4vh">
               <label for="ppt_link">PPT Link: </label>
               <input type="url" name="ppt_link" required />
             </div>
             <button type="submit">Submit</button>
-            <p id="showerrormessage"></p>
+            <p id="showerrormessage" align="center"></p>
           </form>
         </div>
       </div>
@@ -186,7 +185,7 @@
     ></script>
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyyYsV68r0GeYTMA2XLHqmnD7WxxJf_NNpcn_DxbFM4amL1xiZak5F7ggnWa8scwG0xmQ/exec";
+        "https://script.google.com/macros/s/AKfycbxkbbZTPUr6ApDNKS-gO4KR35VtflVZc4vRJRaNJjJSai8j76sXamffFWHENUbic_C-xw/exec";
       const form = document.forms["google-sheet"];
 
       form.addEventListener("submit", (e) => {
@@ -208,6 +207,9 @@
               $("#showerrormessage").html("You can only submit once");
             } else if (data == 5) {
               $("#showerrormessage").html("Team size should be 1-4");
+            }
+            else if (data == 6) {
+              $("#showerrormessage").html("Thank you for participating. The submission time is over");
             }
           })
           .catch((error) => window.alert("Error"));
